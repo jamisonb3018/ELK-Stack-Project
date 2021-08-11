@@ -25,7 +25,7 @@ The load balancing ensures that the application will be efficient addition to re
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the logs and system metrics and statistics.
 
-- Filebeat watches for any information that has been changed, and when the change took place.
+- Filebeat watches for any information that has been changed, and documents when the change took place.
 
 The configuration details of each machine may be found below.
 
@@ -45,7 +45,7 @@ The machines on the internal network are not exposed to the public Internet.
 Only the JumpBoxProvisioner machine can accept connections from the Internet. Access to this machine is only allowed from my IP Address:
 
 - 100.16.xxx.xx
-- Additionally Kibana can be accessed via URL from my home IP address.
+- Additionally, Kibana can be accessed via URL from my home IP address.
 
 Machines within the network can only be accessed by the JumpBoxProvisioner machine.
 -Internal IP Address: 10.0.0.4
@@ -102,7 +102,7 @@ SSH into the control node and follow the steps below:
 
 - Run docker container list -a to verify that the container is on.
 
-- If it isn't, run docker start sebp/elk.
+- If it isn't on, then run docker start sebp/elk.
 
 - Exit the ELK Container
 
@@ -140,7 +140,7 @@ SSH into the control node and follow the steps below:
 
 - Scroll to the bottom and click on Verify Incoming Data.
 
-- If the ELK stack was successfully receiving logs, you would have seen:
+- If the ELK stack was successfully receiving logs, you would see incoming logs
 
 - Copy the metricbeat-configuration.yml file to /etc/ansible/files.
 
