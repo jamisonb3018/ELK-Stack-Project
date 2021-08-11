@@ -24,6 +24,7 @@ The load balancing ensures that the application will be efficient addition to re
 - This protects the servers from becoming overloaded, as well as protecting against Distributed Denial of Service (DDoS) attacks.
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the logs and system metrics and statistics.
+
 - Filebeat watches for any information that has been changed, and when the change took place.
 
 The configuration details of each machine may be found below.
