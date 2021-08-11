@@ -2,7 +2,7 @@
 
 The files in this repository were used to configure the network depicted below.
 
-!<img width="813" alt="Network_Diagram" src="https://user-images.githubusercontent.com/58924211/129057101-4e5d583b-e364-44ce-85d1-638fb02cd4c8.png">
+<img width="813" alt="Network_Diagram" src="https://user-images.githubusercontent.com/58924211/129057101-4e5d583b-e364-44ce-85d1-638fb02cd4c8.png">
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the playbook file may be used to install only certain pieces of it, such as Filebeat.
 
@@ -98,7 +98,7 @@ In order to use the playbook, you will need to have an Ansible control node alre
 
 SSH into the control node and follow the steps below:
 
-- SSH into the ELK Container ssh then ansible@10.0.0.4
+- SSH into the ELK Container ssh then ansible@10.0.0.4.
 
 - Run docker container list -a to verify that the container is on.
 
@@ -108,7 +108,7 @@ SSH into the control node and follow the steps below:
 
 - Navigate to (Your IP Address):5601 from your web browser.
 
-- Open your ELK server homepage
+- Open your ELK server homepage.
 
 - Click on Add Log Data.
 
@@ -118,11 +118,11 @@ SSH into the control node and follow the steps below:
 
 - Copy the filebeat-playbook.yml file to /etc/ansible/roles
 
-- Filebeat Playbook
+- Filebeat Playbook.
 
 - Copy the filebeat-configuration.yml file to /etc/ansible/files.
 
-- Filebeat Configuration
+- Filebeat Configuration.
 
 - Scroll to line #1106 and replace the IP address with the IP address of your ELK machine, 10.1.0.4 for the purposes of my setup.
 
@@ -140,9 +140,7 @@ SSH into the control node and follow the steps below:
 
 - Scroll to the bottom and click on Verify Incoming Data.
 
-- If the ELK stack was successfully receiving logs, you would see incoming logs
-
-- Copy the metricbeat-configuration.yml file to /etc/ansible/files.
+- If the ELK stack was successfully receiving logs you would see incoming logs.
 
 - Copy the metricbeat-configuration.yml file to /etc/ansible/files.
 
@@ -152,9 +150,9 @@ SSH into the control node and follow the steps below:
 
 - Run ansible-playbook metricbeat-configuration.yml
 
-- To verify that your play works as expected, on the Metricbeat installation page in the ELK server GUI, scroll to Step 5: Module Status and click Check Data.
+- To verify that your play works as expected on the Metricbeat installation page in the ELK server GUI scroll to Step 5 Module Status and click Check Data.
 
-![IMG_5462366A16D5-1](https://user-images.githubusercontent.com/58924211/129099985-a6226891-eb70-40d3-9676-24a80901bf2e.jpeg)
+[IMG_5462366A16D5-1](https://user-images.githubusercontent.com/58924211/129099985-a6226891-eb70-40d3-9676-24a80901bf2e.jpeg)
 
 <img width="1168" alt="data_success" src="https://user-images.githubusercontent.com/58924211/129101160-f32dd481-f795-40d8-8cf1-a629b0c914b1.png">
 
