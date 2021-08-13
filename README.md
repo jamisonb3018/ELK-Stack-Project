@@ -26,6 +26,7 @@ The load balancing ensures that the application will be efficient addition to re
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the logs and system metrics and statistics.
 
 - Filebeat watches for any information that has been changed, and documents when the change took place.
+- Metricbeat periodically collect metrics from the operating system and from services running on the server.
 
 The configuration details of each machine may be found below.
 
@@ -100,11 +101,11 @@ SSH into the control node and follow the steps below:
 
 - SSH into the ELK Container ssh then ansible@10.0.0.4.
 
-- Run docker container list -a to verify that the container is on.
+- Run docker container list -a to verify that the container is running .
 
-- If it isn't on, then run docker start sebp/elk.
+- If it isn't running then run docker start sebp/elk.
 
-- Exit the ELK Container
+- Exit ELK Container
 
 - Navigate to (Your IP Address):5601 from your web browser.
 
