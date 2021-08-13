@@ -151,9 +151,3 @@ SSH into the control node and follow the steps below:
 - Run ansible-playbook metricbeat-configuration.yml
 
 - To verify that your play works as expected on the Metricbeat installation page in the ELK server GUI scroll to Step 5 Module Status and click Check Data.
-
-[IMG_5462366A16D5-1](https://user-images.githubusercontent.com/58924211/129099985-a6226891-eb70-40d3-9676-24a80901bf2e.jpeg)
-
-<img width="1168" alt="data_success" src="https://user-images.githubusercontent.com/58924211/129101160-f32dd481-f795-40d8-8cf1-a629b0c914b1.png">
-
-
